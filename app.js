@@ -25,6 +25,6 @@ alert("Your drink is getting prepared");
 
 
 
-console.log(name+" " + drink +drinkname);
+console.log(name+" "+"your order is " + drink+" " +drinkname);
 
 
