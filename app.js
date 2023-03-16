@@ -13,7 +13,7 @@ else if(gender=="male")
 }
 else 
 {
-    console.log("Welcome back!");
+    alert("Welcome back!");
 }
 
 
@@ -25,6 +25,6 @@ alert("Your drink is getting prepared");
 
 
 
-console.log(name +" " + drinkname);
+console.log(name+" " + drink +drinkname);
 
 
