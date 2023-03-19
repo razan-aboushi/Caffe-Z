@@ -24,22 +24,26 @@ else if(gender=="male")
 
 
 
-let drink =prompt("What do you want to drink , hot or cold drink?");
+let drinktype =prompt("What do you want to drink , hot or cold drink?");
 
 let drinkname =prompt("Please enter the name of the drink you would like to drink");
 
 alert("Your drink is getting prepared");
 
 
-console.log(name+" "+" your order is " + drink + " " + drinkname);
+console.log(name+" "+" your order is " + drinktype + " " + drinkname);
 
 
 
 
-let yourArray = [`${name} ${gender} ${drink} ${drinkname}`];
+let yourArray = [`${name} ${gender} ${drinktype} ${drinkname}`];
 
 
 for(let R =0; R<=3;R++)
 {
 console.log(yourArray[R]);
+
 }
+
+
+console.log(`Your name is ${name} and your gender is ${gender} , you order ${drinktype} ${drinkname}`);
