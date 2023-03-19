@@ -1,49 +1,49 @@
-let name =prompt("Please ,Enter your name");
+// let name =prompt("Please ,Enter your name");
 
 
 
-let gender = prompt("Please ,Enter your gender");
+// let gender = prompt("Please ,Enter your gender");
 
-while(gender!="female" && gender!="male")
-{
-     gender = prompt("Please ,Enter your gender");
+// while(gender!="female" && gender!="male")
+// {
+//      gender = prompt("Please ,Enter your gender");
 
-}
+// }
 
-if(gender=="female")
-{
-    alert("Hello" + " "+" Ms. "+ name +" " +"How was your day?");
-}
-else if(gender=="male")
-{
-    alert("Hello"+ " "+" Mr. "+ name +" " +"How was your day?" );
-}
-
-
-
-
-
-
-let drinktype =prompt("What do you want to drink , hot or cold drink?");
-
-let drinkname =prompt("Please enter the name of the drink you would like to drink");
-
-alert("Your drink is getting prepared");
-
-
-console.log(name+" "+" your order is " + drinktype + " " + drinkname);
+// if(gender=="female")
+// {
+//     alert("Hello" + " "+" Ms. "+ name +" " +"How was your day?");
+// }
+// else if(gender=="male")
+// {
+//     alert("Hello"+ " "+" Mr. "+ name +" " +"How was your day?" );
+// }
 
 
 
 
-let yourArray = [`${name} ${gender} ${drinktype} ${drinkname}`];
 
 
-for(let R =0; R<=3;R++)
-{
-console.log(yourArray[R]);
+// let drinktype =prompt("What do you want to drink , hot or cold drink?");
 
-}
+// let drinkname =prompt("Please enter the name of the drink you would like to drink");
+
+// alert("Your drink is getting prepared");
 
 
-console.log(`Your name is ${name} and your gender is ${gender} , you order ${drinktype} ${drinkname}`);
+// console.log(name+" "+" your order is " + drinktype + " " + drinkname);
+
+
+
+
+// let yourArray = [`${name} ${gender} ${drinktype} ${drinkname}`];
+
+
+// for(let R =0; R<=3;R++)
+// {
+// console.log(yourArray[R]);
+
+// }
+
+
+// console.log(`Your name is ${name} and your gender is ${gender} , you order ${drinktype} ${drinkname}`);
