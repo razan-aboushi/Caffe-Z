@@ -94,63 +94,53 @@
 
 
 
-
-
-let myForm =document.getElementById("myForm");
-
-let div12=document.getElementById("menu12");
-
- div12.appendChild(myForm);
-
-
- myForm.addEventListener("submit",(event)=>{
+const mainForm = document.getElementById("menu12");
+mainForm.addEventListener("submit", function (event) 
+{
     event.preventDefault();
+    const userName = event.target.name.value;
+    const userAge = event.target.age.value;
+    const drinkType = event.target.cold1.checked ? event.target.cold1.value : "";
+    const drinkType1 = event.target.hot1.checked ? event.target.hot1.value : "";
+    const drinName = event.target.Drinktype.value;
+    console.log(userName , userAge , drinkType , drinkType1 , drinName);
 
-    let username=event.target.name.value;
-    let age=event.target.age.value;
-    let drinkstate=event.target.drinkstate.value;
-    let Drinktype=event.target.Drinktype.value;
 
 
-    renderinput(username,age,drinkstate,Drinktype);
 
+    let mainCont = document.getElementById("menu12")
+
+
+    let divcont = document.getElementById("div123")
+    let maindiv = document.createElement("div");
+    divcont.appendChild(maindiv);
+    let parg = document.createElement("p");
+    parg.textContent = userName;
+    maindiv.appendChild(parg);
+
+    divcont.appendChild(parg);
+
+
+
+
+    let unorderList = document.createElement("ul");
+    let listItem1 = document.createElement("li");
+    listItem1.textContent =` Age: ${userAge}`;
+    let listItem2 = document.createElement("li");
+    listItem2.textContent =` Type: ${drinkType}  ${drinkType1}`;
+    let listItem3 = document.createElement("li");
+    listItem3.textContent = `Drink: ${drinName}`;
+    unorderList.appendChild(listItem1);
+    unorderList.appendChild(listItem2);
+    unorderList.appendChild(listItem3);
+    maindiv.appendChild(unorderList);
+    mainCont.appendChild(maindiv);
+
+
+    divcont.appendChild(unorderList);
+    divcont.appendChild(listItem1);
+    divcont.appendChild(listItem2);
+    divcont.appendChild(listItem3);
+   
 
 });
-
-
-
-function renderinput (username,age,drinkstate,Drinktype)
-{
-
-let Pname=document.createElement("p");
-let Page=document.createElement("p");
-let Pdrinkstate=document.createElement("p");
-let Pdrink=document.createElement("p");
-
-
-div12.appendChild(Pname);
-div12.appendChild(Page);
-div12.appendChild(Pdrinkstate);
-div12.appendChild(Pdrink);
-
-let n =Pname.textContent=username;
-let a=Page.textContent=age;
-let t=Pdrinkstate.textContent=drinkstate;
-let d=Pdrink.textContent=Drinktype;
-
-
-Pname.appendChild(n);
-
-Page.appendChild(a);
-
-Pdrinkstate.appendChild(t);
-
-Pdrink.appendChild(d);
-
-form1.appendChild(username);
-form1.appendChild(age);
-form1.appendChild(drinkstate);
-form1.appendChild(Drinktype);
-
-
-}
